@@ -6,29 +6,20 @@ Ce dépôt concerne les rendus de mailto:guilherme.sampaio-teixeira@etu.univ-tls
 
 == TP1
 
-Feature: Check if it's Friday
+.Feature
 
-  Scenario Outline: Check if today is Friday
-    Given today is "<day>"
-    When I ask whether it's Friday yet
-    Then I should be told "<answer>"
-    Examples:
-      | day            | answer |
-      | Friday         | TGIF   |
-      | Sunday         | Non    |
-      | anything else! | Non    |
+  Feature: Check if it's Friday
+    Scenario Outline: Check if today is Friday
+      Given today is "<day>"
+      When I ask whether it's Friday yet
+      Then I should be told "<answer>"
+      Examples:
+        | day            | answer |
+        | Friday         | TGIF   |
+        | Sunday         | Non    |
+        | anything else! | Non    |
 
-.Code
-[source,java]
----
-@Given("today is Sunday")
-public void today_is_sunday() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
----
-
-.Exemple d'image insérée en asciidoc
-image::artifacts-r303.svg[width=80%]
+.Trace de succès du code
+image::capture_success.png[width=80%]
 
 == TP2...
