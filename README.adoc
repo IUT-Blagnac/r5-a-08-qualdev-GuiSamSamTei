@@ -2,11 +2,23 @@
 :icons: font
 :MoSCoW: https://fr.wikipedia.org/wiki/M%C3%A9thode_MoSCoW[MoSCoW]
 
-Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Jonh Doe].
+Ce dépôt concerne les rendus de mailto:guilherme.sampaio-teixeira@etu.univ-tlse2.fr[Guilherme Sampaio].
 
 == TP1
 
-.Exemple de code
+Feature: Check if it's Friday
+
+  Scenario Outline: Check if today is Friday
+    Given today is "<day>"
+    When I ask whether it's Friday yet
+    Then I should be told "<answer>"
+    Examples:
+      | day            | answer |
+      | Friday         | TGIF   |
+      | Sunday         | Non    |
+      | anything else! | Non    |
+
+.Code
 [source,java]
 ---
 @Given("today is Sunday")
