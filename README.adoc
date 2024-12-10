@@ -22,4 +22,23 @@ Ce dépôt concerne les rendus de mailto:guilherme.sampaio-teixeira@etu.univ-tls
 .Trace de succès du code
 image::capture_success.png[width=80%]
 
-== TP2...
+== TP2
+
+.Order
+  class Order{
+    private String owner;
+    private String target;
+    private List<String> cocktails = new ArrayList<String>();
+    public void declareOwner(String owner){
+        this.owner = owner;
+    }
+    public void declareTarget(String target){
+        this.target = target;
+    }
+    public List<String> getCocktails(){
+        return cocktails;
+    }
+  }
+
+.Trace de succès du code
+image::capture_tp2.png[width=80%]
