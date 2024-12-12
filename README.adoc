@@ -45,4 +45,9 @@ image::capture_tp2.png[width=80%]
 
 == TP3
 
-Non complété, vous pouvez retrouver le code source dans le dossier `tp3`.
+Non complété, vous pouvez retrouver le code réalisé dans le dossier `tp3`.
+
+== TP4
+
+.Documentation hellocucumber
+image::capture_doc.png[width=80%]
